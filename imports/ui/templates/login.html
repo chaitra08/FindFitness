@@ -1,0 +1,32 @@
+<template name="login">
+<div class="container">
+  <div id="login-logo">
+    <img src="images/logo.svg"/>
+  </div>
+
+  <div class="app-name">
+    <p>FindFitness</p>
+  </div>
+
+  <div class="forms">
+  <form class="login-form forms" name="login">
+    <div>
+      <input name="username" placeholder="Username"/>
+    </div>
+    <div>
+      <input name="password" type="password" placeholder="Password"/>
+    </div>
+
+    <div class="login-btn">
+      <button type="submit">Login</button>
+    </div>
+  </form>
+  </div>
+
+  <p id="question">Are you not a user yet ?</p>
+
+  <a class="green" href ={{pathFor route ='signup'}}><p id="signup">Sign Up</p></a>
+  
+</div>
+</template>
+
